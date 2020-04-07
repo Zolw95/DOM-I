@@ -59,14 +59,11 @@ newItem.style.color = 'green';
 
 
 // Add New Element Using prepend
+var secondItem = nav.prepend(addItem('Home'));
+document.getElementsByTagName('a')[0].style.color = 'green';
 
-function addItemTwo(name) {
-  let a = document.createElement('a');
-  a.textContent = name;
-  return a;
-}
-var secondItem = nav.prepend(addItemTwo('Home'));
-secondItem.style.color = 'green';
+// Below code does not seem to work
+// secondItem.style.color = 'green';
 
 
 //navItems.forEach(el => el.setAttribute('id', 'nav-item-' + 1));
