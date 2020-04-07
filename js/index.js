@@ -163,4 +163,6 @@ contact.getElementsByTagName('p')[1].textContent = siteContent['contact']['phone
 contact.getElementsByTagName('p')[2].textContent = siteContent['contact']['email'];
 
 
-// Task 3: Add New Content
+// Select Footer and Update Footer
+var footerContent = document.getElementsByTagName('footer')[0];
+footerContent.getElementsByTagName('p')[0].textContent = siteContent['footer']['copyright'];
